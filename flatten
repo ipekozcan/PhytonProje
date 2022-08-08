@@ -1,0 +1,11 @@
+yeni_z = []
+def flatten(n):
+    for x in n:
+        if isinstance(x,list):
+            flatten(x)
+           
+        else:
+            yeni_z.append(x)
+    
+flatten(z)
+print(yeni_z)
